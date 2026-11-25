@@ -1678,6 +1678,10 @@ Emitted when client receives a response.
 
 Emitted when server receives a request.
 
+Stores bound to this channel with [`channel.bindStore(store)`][] remain
+entered while the `'request'`, `'checkContinue'`, and `'checkExpectation'`
+events are emitted, so listeners run within the bound store's context.
+
 ##### Event: `'http.server.response.created'`
 
 * `request` {http.IncomingMessage}
