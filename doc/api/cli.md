@@ -1553,6 +1553,16 @@ added:
 
 Enable experimental support for the network inspection with Chrome DevTools.
 
+### `--experimental-otel`
+
+<!-- YAML
+added: REPLACEME
+-->
+
+> Stability: 1.0 - Early development
+
+Enable the experimental [`node:otel`][] module.
+
 ### `--experimental-package-map=<path>`
 
 <!-- YAML
@@ -4372,6 +4382,7 @@ one is included in the list below.
 * `--experimental-import-text`
 * `--experimental-json-modules`
 * `--experimental-modules`
+* `--experimental-otel`
 * `--experimental-package-map`
 * `--experimental-print-required-tla`
 * `--experimental-quic`
@@ -5060,6 +5071,7 @@ node --stack-trace-limit=12 -p -e "Error.stackTraceLimit" # prints 12
 [`module.setSourceMapsSupport()`]: module.md#modulesetsourcemapssupportenabled-options
 [`net.getDefaultAutoSelectFamilyAttemptTimeout()`]: net.md#netgetdefaultautoselectfamilyattempttimeout
 [`node:ffi`]: ffi.md
+[`node:otel`]: otel.md
 [`node:sqlite`]: sqlite.md
 [`node:stream/iter`]: stream_iter.md
 [`node:vfs`]: vfs.md

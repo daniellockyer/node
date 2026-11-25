@@ -367,6 +367,10 @@
               "type": "boolean",
               "description": "experimental support for importing source as text with import attributes"
             },
+            "experimental-otel": {
+              "type": "boolean",
+              "description": "experimental node:otel module"
+            },
             "experimental-package-map": {
               "type": "string",
               "description": "use the specified file for package map resolution"
