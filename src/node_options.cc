@@ -800,6 +800,10 @@ EnvironmentOptionsParser::EnvironmentOptionsParser() {
             true);
   AddOption("--experimental-websocket", "", NoOp{}, kAllowedInEnvvar);
   AddOption("--experimental-global-customevent", "", NoOp{}, kAllowedInEnvvar);
+  AddOption("--experimental-otel",
+            "experimental node:otel module",
+            BOOL_FIELD(experimental_otel),
+            kAllowedInEnvvar);
   AddOption("--experimental-sqlite",
             "experimental node:sqlite module",
             BOOL_FIELD(experimental_sqlite),
